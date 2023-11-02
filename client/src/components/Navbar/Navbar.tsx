@@ -6,14 +6,15 @@ export const Navbar = () => {
   return (
     <div className="navbar">
       <div className='container'>
-        <div  className='Logo'>
+        <div  className='logo'>
           <img src={Logo} alt=''/>
+          <h1>This is seyda</h1>
         </div>
-      <div  className='links'>
-      {/* <Link  to={}></Link> */}
+        <div  className='links'>
+          <Link  to='/'  className='link'>Home</Link>
+        </div>
       </div>
-      </div>
-      </div>
+    </div>
 
       )
 }

@@ -1,3 +1,9 @@
 .navbar{
     background: var(--color-bg);
 }
+.logo h1{
+    color: white;
+}
+.link{
+    color: white;
+}
