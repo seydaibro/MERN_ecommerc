@@ -1,23 +1,20 @@
 
-import './App.css'
+import './App.css';
+import './index.css';
+import { ProductsContainer } from './containers/ProductsContainer';
+
+import { Navbar } from './components/Navbar/Navbar';
 
 function App() {
-  
-
   return (
-    <div>
-      <header>
-        TS Amazona
-      </header>
-      <main>
-      This is the main body
-      </main>
+    <div  className='App'>
+      <Navbar/>
+      <ProductsContainer/>
       <footer>
-
       </footer>
     </div>
-    
-  )
+  );
 }
 
-export default App
+export default App;
+
