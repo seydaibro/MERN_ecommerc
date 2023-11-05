@@ -5,13 +5,14 @@ import Logo from  '../../assets/react.svg'
 export const Navbar = () => {
   return (
     <div className="navbar">
-      <div className='container'>
+      <div className='navbar-container'>
         <div  className='logo'>
           <img src={Logo} alt=''/>
-          <h1>This is seyda</h1>
+         <p>Seyda</p>
         </div>
         <div  className='links'>
           <Link  to='/'  className='link'>Home</Link>
+          <Link to='/about' className='link'>About</Link>
         </div>
       </div>
     </div>

@@ -1,15 +1,18 @@
 import {createBrowserRouter, RouterProvider, Outlet}  from "react-router-dom"
 import './App.css';
 import './index.css';
-import { ProductsContainer } from './containers/ProductsContainer';
+import { Footer } from "./components/footer/Footer";
 
 import { Navbar } from './components/Navbar/Navbar';
-import { Home } from "./pages/Home";
+import { Home } from "./pages/home/Home";
+import { About } from "./pages/about/About";
+import { SingleProduct } from "./pages/singlep/SingleProduct";
 
 const Layout = () =>{
  return (<>
   <Navbar/>
-  <ProductsContainer/>
+  <Outlet/>
+  <Footer/>
   </>)
 }
 
@@ -22,14 +25,14 @@ const router = createBrowserRouter([
         path:"/",
         element:<Home/>
       },
-      // {
-      //   path:"/post/:id",
-      //   element:<Single/>
-      // },
-      // {
-      //   path:"/write",
-      //   element:<Write/>
-      // }
+      {
+        path:'/about',
+        element:<About/>
+      },
+      {
+        path:'/product/:slug',
+        element:<SingleProduct/>
+      }
     ]
     
   },

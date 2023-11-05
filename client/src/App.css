@@ -5,10 +5,13 @@
   scroll-behavior: smooth;
   font-family: var(font-family);
 }
-/* body {
-  background: var(--color-bg);
-} */
-
+.App{
+   display: flex;
+   justify-content: center;
+}
+.container{
+ width: 100%; 
+}
 
 a {
   color: unset;

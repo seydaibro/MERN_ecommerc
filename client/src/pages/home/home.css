@@ -1,0 +1,21 @@
+
+
+ .product-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+ }
+.product-container li{
+    list-style: none;
+}
+.product-image  img{
+    max-width: 350px;
+    width: 100%;
+    object-fit: cover;
+  }
+  h2{
+    font-family: var(--font-family);
+  }
+  
